@@ -19,7 +19,7 @@ struct Account: Codable {
     var publicRepos: Int?
     var name: String?
     var location: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case login
         case avatarURL = "avatar_url"

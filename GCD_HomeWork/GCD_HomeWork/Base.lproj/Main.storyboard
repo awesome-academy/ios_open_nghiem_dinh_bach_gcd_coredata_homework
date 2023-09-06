@@ -360,9 +360,9 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="heart" catalog="system"/>
+                                <state key="normal" image="heart.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="handleFavouriteButton:" destination="KmY-fh-7YP" eventType="touchUpInside" id="kER-Xk-nVT"/>
+                                    <action selector="handleFavouriteButton:" destination="KmY-fh-7YP" eventType="touchUpInside" id="tgZ-Ak-3EW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -477,10 +477,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Github link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYC-8c-3pf">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYC-8c-3pf">
                                                     <rect key="frame" x="107" y="54.5" width="69.5" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Github link">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="systemYellowColor"/>
+                                                                <font key="NSFont" metaFont="system" size="14"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo7-X6-5DO">
@@ -507,7 +515,7 @@
                                                 <constraint firstItem="8yS-8b-p0c" firstAttribute="top" secondItem="c6f-z3-mnt" secondAttribute="topMargin" constant="20" id="hxt-Fg-QPa"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bYC-8c-3pf" secondAttribute="trailing" constant="50" id="iRJ-8e-bfR"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="CEb-Tr-VLe" secondAttribute="bottom" constant="3" id="mta-XE-hTd"/>
-                                                <constraint firstItem="Bo7-X6-5DO" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8yS-8b-p0c" secondAttribute="trailing" constant="170" id="qUO-oy-Gxq"/>
+                                                <constraint firstItem="Bo7-X6-5DO" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8yS-8b-p0c" secondAttribute="trailing" constant="185" id="qUO-oy-Gxq"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Bo7-X6-5DO" secondAttribute="trailing" id="rf5-9f-9bc"/>
                                                 <constraint firstItem="2tg-A0-ObU" firstAttribute="top" secondItem="c6f-z3-mnt" secondAttribute="topMargin" id="vi7-U5-UeA"/>
                                             </constraints>
@@ -569,7 +577,6 @@
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="test" width="460" height="460"/>
         <systemColor name="systemBackgroundColor">

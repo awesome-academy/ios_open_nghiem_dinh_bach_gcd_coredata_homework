@@ -5,6 +5,7 @@
 //  Created by Bach Nghiem on 30/08/2023.
 //
 
+import CoreData
 import UIKit
 
 final class DetailViewController: UIViewController {
@@ -28,16 +29,33 @@ final class DetailViewController: UIViewController {
         if let account = userAccount {
             getFollowers(followerURL: account.followersURL)
             getProfileDetail(profileURL: account.url)
-            print(account)
+            let coreDataManager = CoreDataManager.shared
+            let imageName = coreDataManager.isExistInFavouriteList(name: account.login) ? Utils.Image.heartFullImageName : Utils.Image.heartImageName
+            favouriteButton.setImage(UIImage(systemName: imageName), for: .normal)
         }
-        config()
+        configView()
     }
     
     @IBAction private func handleBackButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
     
-    private func config() {
+    @IBAction private func handleFavouriteButton(_ sender: Any) {
+        if let account = userAccount {
+            let coreDataManager = CoreDataManager.shared
+            if coreDataManager.isExistInFavouriteList(name: account.login) {
+                coreDataManager.deleteUser(userAccount: account)
+                showToast(message: "Removing \(account.login) from favourite list successfully")
+                favouriteButton.setImage(UIImage(systemName: Utils.Image.heartImageName), for: .normal)
+            } else {
+                coreDataManager.addUser(userAccount: account)
+                showToast(message: "Adding \(account.login) to  favourite list successfully")
+                favouriteButton.setImage(UIImage(systemName: Utils.Image.heartFullImageName), for: .normal)
+            }
+        }
+    }
+    
+    private func configView() {
         navigationController?.isNavigationBarHidden = true
         favouriteButton.setRadius()
         tableView.dataSource = self
@@ -76,11 +94,11 @@ final class DetailViewController: UIViewController {
         if let followersCount = account.followers {
             followersLabel.text = String(followersCount)
         }
-
+        
         if let followingCount = account.following {
             followingLabel.text = String(followingCount)
         }
-
+        
         if let reposCount = account.publicRepos {
             repositoryLabel.text = String(reposCount)
         }
@@ -95,7 +113,8 @@ final class DetailViewController: UIViewController {
     }
 }
 
-extension DetailViewController: UITableViewDataSource {    
+extension DetailViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return accounts.count
     }

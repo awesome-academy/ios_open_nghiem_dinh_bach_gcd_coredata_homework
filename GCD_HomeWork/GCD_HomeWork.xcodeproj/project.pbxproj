@@ -16,6 +16,11 @@
 		529A261B2AA421F300414206 /* AccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A261A2AA421F300414206 /* AccountResponse.swift */; };
 		529A261E2AA4225200414206 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A261D2AA4225200414206 /* APIRepository.swift */; };
 		529A26262AA709B000414206 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A26252AA709B000414206 /* Constant.swift */; };
+		529A262C2AA7167100414206 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 529A262A2AA7167100414206 /* CoreDataModel.xcdatamodeld */; };
+		529A262E2AA719A600414206 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A262D2AA719A600414206 /* CoreDataManager.swift */; };
+		529A26302AA71CAC00414206 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A262F2AA71CAC00414206 /* UIViewController.swift */; };
+		529A26322AA71CE200414206 /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A26312AA71CE200414206 /* CustomToastView.swift */; };
+		529A26372AA8623200414206 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A26362AA8623200414206 /* Utils.swift */; };
 		52C3E3912A9ED473002D77BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3902A9ED473002D77BA /* AppDelegate.swift */; };
 		52C3E3932A9ED473002D77BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3922A9ED473002D77BA /* SceneDelegate.swift */; };
 		52C3E3952A9ED473002D77BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3942A9ED473002D77BA /* HomeViewController.swift */; };
@@ -26,7 +31,6 @@
 		52C3E3B22A9ED47B002D77BA /* GCD_HomeWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3B12A9ED47B002D77BA /* GCD_HomeWorkUITests.swift */; };
 		52C3E3B42A9ED47B002D77BA /* GCD_HomeWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3B32A9ED47B002D77BA /* GCD_HomeWorkUITestsLaunchTests.swift */; };
 		52C3E3C12A9EEB8B002D77BA /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3C02A9EEB8B002D77BA /* ProfileCell.swift */; };
-		52C3E3C42A9EEE89002D77BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3C32A9EEE89002D77BA /* User.swift */; };
 		52C3E3C62A9EF457002D77BA /* LayoutOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3C52A9EF457002D77BA /* LayoutOption.swift */; };
 		52C3E3C82A9EF88A002D77BA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3C72A9EF88A002D77BA /* DetailViewController.swift */; };
 		52C3E3CA2A9F2B64002D77BA /* FollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E3C92A9F2B64002D77BA /* FollowCell.swift */; };
@@ -60,6 +64,11 @@
 		529A261A2AA421F300414206 /* AccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountResponse.swift; sourceTree = "<group>"; };
 		529A261D2AA4225200414206 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
 		529A26252AA709B000414206 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		529A262B2AA7167100414206 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		529A262D2AA719A600414206 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		529A262F2AA71CAC00414206 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		529A26312AA71CE200414206 /* CustomToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastView.swift; sourceTree = "<group>"; };
+		529A26362AA8623200414206 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		52C3E38D2A9ED473002D77BA /* GCD_HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD_HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C3E3902A9ED473002D77BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C3E3922A9ED473002D77BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +83,6 @@
 		52C3E3B12A9ED47B002D77BA /* GCD_HomeWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD_HomeWorkUITests.swift; sourceTree = "<group>"; };
 		52C3E3B32A9ED47B002D77BA /* GCD_HomeWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD_HomeWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52C3E3C02A9EEB8B002D77BA /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
-		52C3E3C32A9EEE89002D77BA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		52C3E3C52A9EF457002D77BA /* LayoutOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutOption.swift; sourceTree = "<group>"; };
 		52C3E3C72A9EF88A002D77BA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		52C3E3C92A9F2B64002D77BA /* FollowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowCell.swift; sourceTree = "<group>"; };
@@ -113,6 +121,7 @@
 				529A25CB2AA035EB00414206 /* UIStackViewExtension.swift */,
 				529A25CD2AA0362400414206 /* ButtonExtension.swift */,
 				529A25CF2AA03A2200414206 /* UITableViewExtension.swift */,
+				529A262F2AA71CAC00414206 /* UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -159,6 +168,15 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		529A26332AA71D1300414206 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				529A262D2AA719A600414206 /* CoreDataManager.swift */,
+				529A262A2AA7167100414206 /* CoreDataModel.xcdatamodeld */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
 		52C3E3842A9ED473002D77BA = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +200,7 @@
 		52C3E38F2A9ED473002D77BA /* GCD_HomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				529A26252AA709B000414206 /* Constant.swift */,
+				529A26332AA71D1300414206 /* CoreDataManager */,
 				529A26212AA6D49D00414206 /* Screen */,
 				529A261C2AA4223A00414206 /* Repository */,
 				529A25C82AA035B600414206 /* Extension */,
@@ -193,10 +211,13 @@
 				52C3E3992A9ED47A002D77BA /* Assets.xcassets */,
 				52C3E39B2A9ED47A002D77BA /* LaunchScreen.storyboard */,
 				52C3E39E2A9ED47A002D77BA /* Info.plist */,
+				529A26252AA709B000414206 /* Constant.swift */,
 				52C3E3C02A9EEB8B002D77BA /* ProfileCell.swift */,
 				52C3E3C52A9EF457002D77BA /* LayoutOption.swift */,
 				52C3E3C92A9F2B64002D77BA /* FollowCell.swift */,
 				529A25C62AA0345F00414206 /* ReusebleTableView.swift */,
+				529A26312AA71CE200414206 /* CustomToastView.swift */,
+				529A26362AA8623200414206 /* Utils.swift */,
 			);
 			path = GCD_HomeWork;
 			sourceTree = "<group>";
@@ -221,7 +242,6 @@
 		52C3E3C22A9EEE78002D77BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				52C3E3C32A9EEE89002D77BA /* User.swift */,
 				529A26182AA421E800414206 /* Account.swift */,
 				529A261A2AA421F300414206 /* AccountResponse.swift */,
 			);
@@ -359,23 +379,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529A262C2AA7167100414206 /* CoreDataModel.xcdatamodeld in Sources */,
 				529A25C72AA0345F00414206 /* ReusebleTableView.swift in Sources */,
 				52C3E3952A9ED473002D77BA /* HomeViewController.swift in Sources */,
 				52C3E3C12A9EEB8B002D77BA /* ProfileCell.swift in Sources */,
 				52C3E3C62A9EF457002D77BA /* LayoutOption.swift in Sources */,
 				52C3E3912A9ED473002D77BA /* AppDelegate.swift in Sources */,
 				529A26192AA421E800414206 /* Account.swift in Sources */,
+				529A26372AA8623200414206 /* Utils.swift in Sources */,
 				52E6646D2A9F309800EBFCBC /* FavouriteViewController.swift in Sources */,
 				529A25CE2AA0362400414206 /* ButtonExtension.swift in Sources */,
 				529A26262AA709B000414206 /* Constant.swift in Sources */,
 				529A261B2AA421F300414206 /* AccountResponse.swift in Sources */,
+				529A26322AA71CE200414206 /* CustomToastView.swift in Sources */,
 				529A25CA2AA035C900414206 /* ImageExtension.swift in Sources */,
 				529A261E2AA4225200414206 /* APIRepository.swift in Sources */,
 				529A25CC2AA035EB00414206 /* UIStackViewExtension.swift in Sources */,
-				52C3E3C42A9EEE89002D77BA /* User.swift in Sources */,
+				529A26302AA71CAC00414206 /* UIViewController.swift in Sources */,
 				52C3E3932A9ED473002D77BA /* SceneDelegate.swift in Sources */,
 				52C3E3CA2A9F2B64002D77BA /* FollowCell.swift in Sources */,
 				52C3E3C82A9EF88A002D77BA /* DetailViewController.swift in Sources */,
+				529A262E2AA719A600414206 /* CoreDataManager.swift in Sources */,
 				529A25D02AA03A2200414206 /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -712,6 +736,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		529A262A2AA7167100414206 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				529A262B2AA7167100414206 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 529A262B2AA7167100414206 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 52C3E3852A9ED473002D77BA /* Project object */;
 }

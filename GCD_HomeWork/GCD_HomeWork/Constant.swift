@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Constant {
+class Constant {    
     struct BaseUrl {
         static let userBaseUrl = "https://api.github.com"
     }

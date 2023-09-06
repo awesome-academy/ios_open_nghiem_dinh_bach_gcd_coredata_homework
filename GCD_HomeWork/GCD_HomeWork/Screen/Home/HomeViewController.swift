@@ -18,11 +18,11 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        config()
+        configView()
         getAccounts()
     }
     
-    private func config() {
+    private func configView() {
         tableView.delegate = self
         tableView.dataSource = self
         searchView.delegate = self
